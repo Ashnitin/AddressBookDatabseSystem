@@ -45,3 +45,8 @@ insert into AddressBook values(8,"aaa","bbb","manipal","Banglore","Manipal",4001
 								(9,"ccc","ddd","kalyan","klyan","Mumbai",400125,857496,"a@gmail.com","friend"),
                                 (10,"ayyy","zzz","pjkas","pune","maharashtra",430125,800496,"ay@gmail.com","friend");
 select * from AddressBook;
+
+-- UC12
+create table type (typeid int primary key,relation varchar(30),id int ,foreign key (id) references AddressBook (id));
+select * from type;
+insert into type values(1,"Famly",1),(2,"Friend",2),(3,"Profession",3),(4,"Friend",5);
